@@ -1,1 +1,148 @@
-Hello World
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+		<link href="/lab01/styles/main.css" rel="stylesheet" type="text/css">
+	    <title>Questionaire</title>
+	  </head>
+	  
+	  <body>
+		<h1>Survey</h1>
+		<form id="myform" action="index.php" method="POST" >
+		<br>
+		<br>
+
+		
+		<h2>What do you think of the UI in this <a href="https://kijiji.ca">Kijiji</a> site?</h2>	
+		<br>
+		<br>
+
+		<div id="zoom_img">
+			<a href="https://kijiji.ca">
+				<img src="images/source.png" alt="Homepage to kijiji.ca" width="300" height="200">
+
+			</a>
+		</div>
+
+
+		<br>
+		<br>
+		<div class="question">
+	<!-- 	<h2> Personal Information </h2>
+		<p>First name: <input type="text" name="firstname"></p>
+		<p>Last name: <input type="text" name="lastname"></p> -->
+		<br>
+		<br>
+			
+		</div>	
+			
+		<div class="question_age">
+
+			<p>What is your age? </p>
+			<select id="age_group">
+				<option value="group1" >Under 16 years</option>
+				<option value="group2" selected="selected">17-25 years</option>
+				<option value="group3">26-49 years</option>
+				<option value="group4">50-65 years</option>
+				<option value="group5">Over 65 years</option>
+			</select>
+
+		</div>
+
+			<br><br>
+
+			<div class="question_score">
+				<p> How attractive do you find this website?</p>
+				<br>
+					<input type="radio" name="recommend_site" value="1" id="1" >
+					<label for="1">1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="radio" name="recommend_site" value="2" id="2" >
+					<label for="2">2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="radio" name="recommend_site" value="3" id="3" >
+					<label for="3">3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="radio" name="recommend_site" value="4" id="4" >
+					<label for="4">4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="radio" name="recommend_site" value="5" id="5" >
+					<label for="5">5</label>
+				<p id="attractiveness_scale">Not at all attractive &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Very attractive</p>
+		</div>
+
+			<br>
+			<br>
+		<div class="question_reason">
+			<p>Please explain why you gave this score.</p>
+			<textarea id="score_review" name="score_review" rows="5" cols="50">
+			</textarea>
+		</div>	
+		
+		<br>
+		<br>
+
+		<div class="question_selection">
+
+			<p>What could kijiji.ca have done better?</p>
+
+				<label class="container">Page layout
+				  <input type="checkbox" >
+				  <span class="checkmark"></span>
+				</label>
+				<br><br>
+				<label class="container">Color scheme
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<br><br>
+
+				<label class="container">Typography
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<br><br>
+
+				<label class="container">Content
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<br><br>
+
+				<label class="container">Accessibility
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<br><br>
+
+				<label class="container">Image
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<br><br>
+
+			
+		</div>
+		<br><br>
+
+			<div>
+
+					<p>Have feedback or an idea? Leave it here:</p>
+						<br>
+					<textarea rows="5" cols="50"></textarea>
+			</div>
+	
+				
+		<br>
+		<br>
+				
+		<button id="submit_button" type="button" class="block">
+			Submit
+		</button>
+
+		<p id="signature">Website designed by Yanbing Ren</p>	
+		
+	
+	  </body>
+</html> 
