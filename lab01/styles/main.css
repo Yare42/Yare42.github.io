@@ -98,7 +98,7 @@ input[type=radio]:checked:after {
 	border-radius: 3px;
 	background-color: #FF6619;
 	text-overflow: none;
-	color: white;
+	color: black;
 	font-family: "Lucida Console","Courier New",monospace;
 
 
